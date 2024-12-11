@@ -79,9 +79,9 @@ def get_cv2_image_from_base64_string(b64str):
 
 # if get_cropped_image_if_2_eyes function not detect anything then it gives empty array
 def get_cropped_image_if_2_eyes(image_path, image_base64_data):
-    face_cascade = cv2.CascadeClassifier('../Server/opencv'
+    face_cascade = cv2.CascadeClassifier('Server/opencv'
                                          '/haarcascades/haarcascade_frontalface_default.xml')
-    eye_cascade = cv2.CascadeClassifier('../Server/opencv'
+    eye_cascade = cv2.CascadeClassifier('Server/opencv'
                                         '/haarcascades/haarcascade_eye.xml')
     if image_path:
         img = cv2.imread(image_path)
